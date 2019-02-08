@@ -6043,17 +6043,30 @@
       }
     },
     "fxa-shared": {
-      "version": "git://github.com/mozilla/fxa-shared.git#58d00607fe638de43c5070c20ce09789c5f991b3",
-      "from": "git://github.com/mozilla/fxa-shared.git#pb/41-feature-flags",
+      "version": "git://github.com/mozilla/fxa-shared.git#526eec9870386191b0d06cb45d801da7b2eee3d6",
+      "from": "git://github.com/mozilla/fxa-shared.git#pb/42-launch-darkly",
       "requires": {
         "accept-language": "2.0.17",
-        "moment": "2.20.1"
+        "moment": "2.20.1",
+        "request": "2.88.0",
+        "request-promise": "4.2.2"
       },
       "dependencies": {
         "moment": {
           "version": "2.20.1",
           "resolved": "https://registry.npmjs.org/moment/-/moment-2.20.1.tgz",
           "integrity": "sha512-Yh9y73JRljxW5QxN08Fner68eFLxM5ynNOAw2LbIB1YAGeQzZT8QFSUvkAz609Zf+IHhhaUxqZK8dG3W/+HEvg=="
+        },
+        "request-promise": {
+          "version": "4.2.2",
+          "resolved": "https://registry.npmjs.org/request-promise/-/request-promise-4.2.2.tgz",
+          "integrity": "sha1-0epG1lSm7k+O5qT+oQGMIpEZBLQ=",
+          "requires": {
+            "bluebird": "^3.5.0",
+            "request-promise-core": "1.1.1",
+            "stealthy-require": "^1.1.0",
+            "tough-cookie": ">=2.3.3"
+          }
         }
       }
     },
@@ -11777,7 +11790,6 @@
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/request-promise-core/-/request-promise-core-1.1.1.tgz",
       "integrity": "sha1-Pu4AssWqgyOc+wTFcA2jb4HNCLY=",
-      "dev": true,
       "requires": {
         "lodash": "^4.13.1"
       }
@@ -12876,8 +12888,7 @@
     "stealthy-require": {
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz",
-      "integrity": "sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=",
-      "dev": true
+      "integrity": "sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks="
     },
     "stream-browserify": {
       "version": "2.0.2",
